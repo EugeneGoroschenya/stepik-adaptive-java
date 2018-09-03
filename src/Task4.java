@@ -1,8 +1,6 @@
-package stepik.adaptive.java;
-
 import java.util.*;
 
-public class Main {
+public class Task4 {
 
     public static void main(String[] args) {
 
