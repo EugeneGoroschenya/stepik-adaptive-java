@@ -1,3 +1,7 @@
+import common.Account;
+import common.State;
+import common.Transaction;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -11,13 +15,13 @@ public class Task6 {
      * <p>
      * You have two classes:
      * <p>
-     * - Transaction: uuid: String,  state: State (CANCELED, FINISHED, PROCESSING), sum: Long, created: Date
-     * - Account: number: String, balance: Long, transactions: List<Transaction>
+     * - common.Transaction: uuid: String,  state: common.State (CANCELED, FINISHED, PROCESSING), sum: Long, created: Date
+     * - common.Account: number: String, balance: Long, transactions: List<common.Transaction>
      * <p>
      * Both classes have getters for all fields with the corresponding names (getState(), getSum(), getTransactions() and so on).
      * Write a method using Stream API that calculates the total sum of canceled transactions for all non-empty accounts (balance > 0). Perhaps, flatMap method can help you to implement it.
      * <p>
-     * Classes Transaction, Account and enum State will be available during testing. You can define your own classes for local testing.
+     * Classes common.Transaction, common.Account and enum common.State will be available during testing. You can define your own classes for local testing.
      * <p>
      * Important. Use the given template for your method. Pay attention to type of an argument and the returned value. Please, use only Stream API, no cycles.
      */

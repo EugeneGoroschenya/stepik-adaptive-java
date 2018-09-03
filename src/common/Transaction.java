@@ -1,6 +1,8 @@
+package common;
+
 import java.util.Date;
 
-class Transaction {
+public class Transaction {
     private String uuid;
     private State state;
     private Long sum;

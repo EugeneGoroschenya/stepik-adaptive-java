@@ -1,3 +1,6 @@
+import common.Account;
+import common.Transaction;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -12,18 +15,18 @@ public class Task7 {
      * <p>
      * You have two classes:
      * <p>
-     * Account: number: String, balance: Long
-     * Transaction: uuid: String, sum: Long, account: Account
+     * common.Account: number: String, balance: Long
+     * common.Transaction: uuid: String, sum: Long, account: common.Account
      * <p>
      * Both classes have getters for all fields with the corresponding names (getNumber(), getSum(), getAccount() and so on).
      * Write a collector that calculates the total sum of transactions (long type, not integer) by each account (i.e. by account number). The collector will be applied to a stream of transactions.
      * <p>
-     * Classes Transaction and Account will be available during testing. You can create your own classes for local testing.
+     * Classes common.Transaction and common.Account will be available during testing. You can create your own classes for local testing.
      * <p>
      * Important. You should write only the collector in any valid formats but without ; on the end.
      * It will be passed as an argument to the collect() method of a stream as shown below.
      * <p>
-     * List<Transaction> transactions = ...
+     * List<common.Transaction> transactions = ...
      * Map<String, Long> totalSumOfTransByEachAccount =
      * transactions.stream()
      * .collect(...your_collector_will_be_passed_here...);

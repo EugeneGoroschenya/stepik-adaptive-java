@@ -1,3 +1,5 @@
-enum State {
+package common;
+
+public enum State {
     CANCELED, FINISHED, PROCESSING
 }

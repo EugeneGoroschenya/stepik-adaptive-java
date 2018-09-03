@@ -1,6 +1,8 @@
+package common;
+
 import java.util.List;
 
-class Account {
+public class Account {
     private String number;
     private Long balance;
     private List<Transaction> transactions;
